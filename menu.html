@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Oghy Wara</title>
+    <link rel="stylesheet" href="menu.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      .menu-container {
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #4caf50;
+      }
+
+      .menu-section {
+        margin-top: 20px;
+      }
+
+      .menu-section h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .menu-section ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .menu-item {
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+        text-align: center;
+      }
+
+      .menu-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .menu-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .menu-info {
+        margin-top: 12px;
+      }
+
+      .menu-info h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+
+      .menu-info p {
+        font-size: 14px;
+        color: #555;
+      }
+
+      .menu-info span {
+        font-size: 16px;
+        font-weight: bold;
+        color: #4caf50;
+      }
+
+      /* Responsif untuk perangkat kecil */
+      @media (max-width: 600px) {
+        .menu-section ul {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-container">
+      <h1>Menu Oghy Wara</h1>
+
+      <!-- Food Section -->
+      <section class="menu-section">
+        <h2>Food</h2>
+        <ul>
+          <li class="menu-item">
+            <img src="katsu.jpg" alt="Chicken Katsu" class="menu-image" />
+            <div class="menu-info">
+              <h3>Chicken Katsu</h3>
+              <p>Katsu goreng dengan saus spesial</p>
+              <span>Rp. 25,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img
+              src="chicken-steak.jpg"
+              alt="Chicken Steak"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Chicken Steak</h3>
+              <p>Steak ayam dengan saus spesial</p>
+              <span>Rp. 35,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img
+              src="chicken-takanomi.jpg"
+              alt="Chicken Takanomi"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Chicken Takanomi</h3>
+              <p>Ayam dengan saus khas Takanomi</p>
+              <span>Rp. 25,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="sate-taichan.jpg" alt="Sate Taichan" class="menu-image" />
+            <div class="menu-info">
+              <h3>Sate Taichan</h3>
+              <p>Sate ayam dengan sambal taichan</p>
+              <span>Rp. 23,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img
+              src="indomie katsu.jpg"
+              alt="Indomie Katsu"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Indomie Katsu</h3>
+              <p>Mie goreng dengan katsu</p>
+              <span>Rp. 25,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img
+              src="indomie-taichan.jpg"
+              alt="Indomie Taichan"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Indomie Taichan</h3>
+              <p>Mie goreng dengan sambal taichan</p>
+              <span>Rp. 23,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="ayam-goreng.jpg" alt="Ayam Goreng" class="menu-image" />
+            <div class="menu-info">
+              <h3>Ayam Goreng</h3>
+              <p>Ayam goreng dengan bumbu khas</p>
+              <span>Rp. 25,000</span>
+            </div>
+          </li>
+
+          <li class="menu-item">
+            <img
+              src="mie-merdeka-25.jpg"
+              alt="Mie Merdeka Paket 25k"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Mie Merdeka</h3>
+              <p>
+                2 Indomie goreng, sosis, telur, bakso, nugget ayam, sayur,
+                kerupuk pangsit, bawang goreng, ice tea
+              </p>
+              <span>Rp. 25,000</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Drink Section -->
+      <section class="menu-section">
+        <h2>Drink</h2>
+        <ul>
+          <li class="menu-item">
+            <img
+              src="cookies cream coffee.jpg"
+              alt="Cookies Cream Coffee"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Cookies Cream Coffee</h3>
+              <p>Minuman kopi dengan rasa cookies cream</p>
+              <span>Rp. 15,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="aren regal.jpg" alt="Aren Regal" class="menu-image" />
+            <div class="menu-info">
+              <h3>Aren Regal</h3>
+              <p>Minuman khas dengan rasa aren</p>
+              <span>Rp. 15,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img
+              src="caramel coffee.jpg"
+              alt="Caramel Coffee"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Caramel Coffee</h3>
+              <p>Minuman kopi dengan rasa karamel</p>
+              <span>Rp. 15,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="red velvet.jpg" alt="Red Velvet" class="menu-image" />
+            <div class="menu-info">
+              <h3>Red Velvet</h3>
+              <p>Minuman manis dengan rasa red velvet</p>
+              <span>Rp. 15,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="aren coffe.jpg" alt="Aren Coffee" class="menu-image" />
+            <div class="menu-info">
+              <h3>Aren Coffee</h3>
+              <p>Minuman kopi dengan rasa aren</p>
+              <span>Rp. 15,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img
+              src="ice-vanilla.jpg"
+              alt="Ice Tea Vanilla"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Ice Tea Vanilla</h3>
+              <p>Es teh dengan rasa vanilla</p>
+              <span>Rp. 13,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="taro.jpg" alt="Taro" class="menu-image" />
+            <div class="menu-info">
+              <h3>Taro</h3>
+              <p>Minuman taro segar</p>
+              <span>Rp. 15,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img
+              src="ice tea lemon.jpg"
+              alt="Ice Tea Lemon"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Ice Tea Lemon</h3>
+              <p>Es teh dengan rasa lemon</p>
+              <span>Rp. 13,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img
+              src="hazelnut choco.jpg"
+              alt="Hazelnut Choco"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Hazelnut Choco</h3>
+              <p>Minuman cokelat dengan rasa hazelnut</p>
+              <span>Rp. 15,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img
+              src="belgian choco.jpg"
+              alt="Belgian Choco"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Belgian Choco</h3>
+              <p>Minuman cokelat khas Belgia</p>
+              <span>Rp. 15,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="ice tea leci.jpg" alt="Ice Tea Leci" class="menu-image" />
+            <div class="menu-info">
+              <h3>Ice Tea Leci</h3>
+              <p>Es teh dengan rasa leci</p>
+              <span>Rp. 13,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="tiramisu.jpg" alt="Tiramisu" class="menu-image" />
+            <div class="menu-info">
+              <h3>Tiramisu</h3>
+              <p>Minuman tiramisu lembut</p>
+              <span>Rp. 15,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="ice tea ori.jpg" alt="Ice Tea Ori" class="menu-image" />
+            <div class="menu-info">
+              <h3>Ice Tea Ori</h3>
+              <p>Es teh original</p>
+              <span>Rp. 7,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img
+              src="mineral water.jpg"
+              alt="Mineral Water"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Mineral Water</h3>
+              <p>Air mineral segar</p>
+              <span>Rp. 5,000</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Snack Section -->
+      <section class="menu-section">
+        <h2>Snack</h2>
+        <ul>
+          <li class="menu-item">
+            <img
+              src="chicken-burger.jpg"
+              alt="Chicken Burger"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Chicken Burger</h3>
+              <p>Burger ayam lezat</p>
+              <span>Rp. 12,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img
+              src="chicken-cheese.jpg"
+              alt="Chicken Cheese Burger"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Chicken Cheese Burger</h3>
+              <p>Burger ayam dengan keju</p>
+              <span>Rp. 15,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="royal-burger.jpg" alt="Royal Burger" class="menu-image" />
+            <div class="menu-info">
+              <h3>Royal Burger</h3>
+              <p>Burger spesial dengan bahan berkualitas</p>
+              <span>Rp. 20,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img
+              src="pizza-meat.jpg"
+              alt="Pizza Meat Mugiwara"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Pizza Meat Mugiwara</h3>
+              <p>Pizza daging lezat</p>
+              <span>Rp. 60,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img
+              src="pizza chicken.jpg"
+              alt="Pizza Chicken Mugiwara"
+              class="menu-image"
+            />
+            <div class="menu-info">
+              <h3>Pizza Chicken Mugiwara</h3>
+              <p>Pizza ayam spesial</p>
+              <span>Rp. 55,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="french-fries.jpg" alt="French Fries" class="menu-image" />
+            <div class="menu-info">
+              <h3>French Fries</h3>
+              <p>Kentang goreng renyah</p>
+              <span>Rp. 15,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="sosis roll.jpg" alt="Sosis Roll" class="menu-image" />
+            <div class="menu-info">
+              <h3>Sosis Roll</h3>
+              <p>Sosis gulung lezat</p>
+              <span>Rp. 15,000</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <img src="puding-regal.jpg" alt="Puding Regal" class="menu-image" />
+            <div class="menu-info">
+              <h3>Puding Regal</h3>
+              <p>Puding lezat dengan rasa regal</p>
+              <span>Rp. 10,000</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
